@@ -8,7 +8,7 @@
 
 # Live Demo 👁️
 
-https://routine-control.netlify.app/
+https://clock-rahul.netlify.app/
 
 # Snapshot of Clock App
 
