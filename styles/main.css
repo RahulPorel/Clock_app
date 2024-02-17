@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #10101e;
+  color: aliceblue; */
+}
+
+/* //button */
+
+#toggle-btn {
+  width: 89px;
+  border: 1px solid #0080b3;
+  border-radius: 17px;
+  font-weight: 800;
+  position: absolute;
+  right: 40px;
+}
+
+#toggle-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.dark-mode-toggle {
+  background: #10101e;
+  color: #fff;
+}
+
+.dark-mode-theme {
+  background: #10101e;
+  color: white;
+}
+
+/* main */
+
+.datetime {
+  cursor: default;
+  color: white;
+  background: #10101e;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 340px;
+  padding: 15px 10px;
+  border: 3px solid #2e94e3;
+  border-radius: 5px;
+  transition: background, box-shadow 0.5s;
+}
+
+.datetime:hover {
+  background: var(--clock-box-background-color-hover);
+  background: #3636b3;
+  box-shadow: 0 0 30px #2e94e3;
+}
+.date {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.time {
+  font-size: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time span:not(:last-child) {
+  position: relative;
+  margin: 0 6px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.time span:last-child {
+  font-weight: 400;
+  padding-left: 15px;
+  font-size: 22.5px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+#sec {
+  font-size: 41.5px;
+  font-weight: 500;
+  color: blanchedalmond;
+}
+
+.menu {
+  cursor: pointer;
+  display: none;
+  padding-left: 5px;
+  gap: 20px;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+}
+.setting-options-hide {
+  display: none;
+}
+
+.setting {
+  cursor: pointer;
+  display: block;
+  text-align: end;
+  align-items: end;
+  align-content: end;
+  padding-right: 15px;
+}
+
+.setting-options {
+  position: fixed;
+  font-size: 12px;
+  text-align: center;
+}
